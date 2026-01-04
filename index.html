@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <header>
+        <!-- for big screens laptop , pc -->
+        <div class="logo">Alex</div>
+        <div class="nav">
+            <a href="#" id="active" >Home</a>
+            <a href="Contact.html" class="c" >Contact</a>
+            <a href="#" class="d">Designs</a>
+            <a href="#" class="a">About</a>
+            <button href="#"
+             id="Theme-btn"
+             onclick="toggletheme()"
+              >Change theme</button>
+        </div>
+    </header>
+
+<button id="open" popovertarget="nav-popover"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"  fill="var(--normal-color)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+    
+    <!-- for smallscreens mobile-->
+    <nav popover id="nav-popover">
+        
+        <div class="logo">Alex</div>
+
+        <button
+        id="close" 
+        popovertarget="nav-popover"
+        popovertargetaction="hide">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="var(--main-color)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
+
+        <div class="nav">
+
+             <a href="#" id="active" >Home</a>
+            <a href="#" class="c" >Contact</a>
+            <a href="#" class="d">Designs</a>
+            <a href="#" class="a">About</a>
+            <button href="#"
+             id="Theme-btn"
+             onclick="toggletheme()"
+              >Change theme</button>
+
+        </div>
+    
+    </nav>
+
+    <div class="logo2">Alex</div>
+
+    <!-- main content -->
+
+    <main>
+
+        <!-- image -->
+
+        <div class="home-img">
+            <img class="img" src="AI Artwork AI Art _ PixAI.jfif" alt="image">
+        </div>
+        
+        <!-- typing animation  -->
+
+        <section>
+            <h1>Hi its <span>Alex</span></h1>
+            <h1 id="typing-text">I am a
+                <span class="span-text" id="position1" style="font-family: monospace; font-size: 2.2rem;">Web Developer</span>
+                <span class="span-text" id="position2" style="font-family: monospace; font-size: 2.2rem;">Web Designer</span>
+                <span class="span-text" id="position3" style="font-family: monospace; font-size: 2.2rem;">YouTuber</span>
+                <span class="span-text" id="position4" style="font-family: monospace; font-size: 2.2rem;">Artist</span>
+                <span class="span-text" id="position5" style="font-family: monospace; font-size: 2.2rem;">Script Writer</span>
+             </h1>
+
+            <p>I bridge the gap between art and code. 
+                As a Frontend Developer and Digital Artist, 
+                I build high-performance, 
+                responsive websites with modern glassmorphism aesthetics. 
+                I don't just write code; 
+                I design experiences that help brands stand out in a digital world.
+            </p>
+
+            <!-- social icons -->
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/issac-coder-94aa203a2/" id="link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="UCtDAtUqLxIOHXGySKy4yS9Q " id="YouTube" ><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/riazsindhu3880-arch" id="github"><i class="fa-brands fa-github"></i></a>
+                <a href="#" id="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div >
+
+            <!-- main buttons for contect with me -->
+
+            <div class="div-btn">
+               <a href="" class="btn1">
+                Hire me
+
+               <a
+                href="" class="btn2">
+                Talk to me
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- java script -->
+    <script src="index.js"></script>
+</body>
+</html>
